@@ -13,7 +13,7 @@ local Window = Rayfield:CreateWindow({
         Invite = "GYH92be25Z",
         RememberJoins = true
     },
-    KeySystem = true,
+    KeySystem = false,
     KeySettings = {
         Title = "Vision Script Hub | Key",
         Subtitle = "Link In Discord",
@@ -45,7 +45,7 @@ local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 
 --// Path
-local shotMeter = workspace:WaitForChild("scriplic"):WaitForChild("ShotMeter")
+local shotMeter = workspace:WaitForChild(player.Name):WaitForChild("ShotMeter")
 
 --// Remote
 local shootRemote = RS:WaitForChild("Events"):WaitForChild("Shoot")
